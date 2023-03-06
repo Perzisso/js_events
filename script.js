@@ -31,7 +31,15 @@ hamburger.addEventListener("click", onClick)
 
 /*** Fonctionnalité 3 ***/
 
+var card1 = document.getElementsByClassName("col-md-4")[0];
+var button_card = document.getElementsByClassName("btn btn-sm btn-outline-secondary")[0];
+var text_card = document.getElementsByClassName("card-text")[0]
 
+var redText = function() {
+  text_card.style.color = "red"
+}
+
+button_card.addEventListener("click", redText)
 
 /*** Fonctionnalité 4 ***/
 
