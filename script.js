@@ -43,7 +43,22 @@ button_card.addEventListener("click", redText)
 
 /*** Fonctionnalité 4 ***/
 
+var card2 = document.getElementsByClassName("col-md-4")[1];
+var button_card = document.getElementsByClassName("btn btn-sm btn-outline-secondary")[1];
+var text_card = document.getElementsByClassName("card-text")[1]
 
+
+var greenText = function() {
+    if (text_card.style.color === "green"){
+      text_card.style.color = "black";
+    }
+    else {
+      text_card.style.color ="green";
+    }
+
+}
+
+button_card.addEventListener("click", greenText)
 
 /*** Fonctionnalité 5 ***/
 
