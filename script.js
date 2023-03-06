@@ -60,9 +60,21 @@ var greenText = function() {
 
 button_card.addEventListener("click", greenText)
 
-/*** Fonctionnalité 5 ***/
+/*** Fonctionnalité 5***/
 
+var nav = document.getElementsByClassName("navbar")[0];
+var tagName = document.getElementsByTagName("link")[0];
 
+var linkKiller = function(){
+  if (tagName.disabled === false) {
+    tagName.disabled = true ;
+  }
+  else {
+    tagName.disabled = false;
+  }
+}
+
+nav.addEventListener('dblclick', linkKiller)
 
 /*** Fonctionnalité 6 ***/
 
