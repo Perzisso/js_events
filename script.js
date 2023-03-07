@@ -45,15 +45,15 @@ button_card.addEventListener("click", redText)
 
 var card2 = document.getElementsByClassName("col-md-4")[1];
 var button_card = document.getElementsByClassName("btn btn-sm btn-outline-secondary")[1];
-var text_card = document.getElementsByClassName("card-text")[1]
+var text_card2 = document.getElementsByClassName("card-text")[1]
 
 
 var greenText = function() {
-    if (text_card.style.color === "green"){
-      text_card.style.color = "black";
+    if (text_card2.style.color === "green"){
+      text_card2.style.color = "black";
     }
     else {
-      text_card.style.color ="green";
+      text_card2.style.color ="green";
     }
 
 }
@@ -77,7 +77,6 @@ var linkKiller = function(){
 nav.addEventListener('dblclick', linkKiller)
 
 /*** Fonctionnalité 6 ***/
-
 
 
 /*** Fonctionnalité 7 ***/
